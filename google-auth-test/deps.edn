@@ -6,4 +6,4 @@
         ring-cors/ring-cors {:mvn/version "0.1.13"}
         ring/ring-defaults {:mvn/version "0.6.0"}
         clj-oauth2/clj-oauth2 {:mvn/version "0.2.0"}
-        ring-oauth2/ring-oauth2 {:mvn/version "0.3.0"}}}
+        aero/aero {:mvn/version "1.1.6"}}}
