@@ -10,7 +10,7 @@
       (wrap-cors :access-control-allow-origin [#"http://127.0.0.1:5500"]
                  :access-control-allow-methods [:get :put :post :delete])
       (wrap-params)
-      (wrap-defaults (-> site-defaults (assoc-in [:session :cookie-attrs :same-site] :lax)))
+      (wrap-defaults (assoc site-defaults :session false))
       (ring/wrap-json-response)
       (ring/wrap-json-body {:keywords? true})
       (cookies/wrap-cookies)))
